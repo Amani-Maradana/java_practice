@@ -9,7 +9,7 @@ import com.codegnan.atm.exceptions.InvalidAmountException;
 import com.codegnan.atm.exceptions.NotAOperatorException;
 import com.codegnan.atm.service.IATMService;
 
-public class HDFCDebitCard implements IATMService{
+public class HdfcDebitCard implements IATMService{
 	String name;
 	long debitCardNumber;
 	double accountBalance;
@@ -18,7 +18,7 @@ public class HDFCDebitCard implements IATMService{
 	final String type = "user";
 	int chances;
 	
-	public HDFCDebitCard(long debitCardNumber,String name,double accountBalance,int pinNumber) {
+	public HdfcDebitCard(long debitCardNumber,String name,double accountBalance,int pinNumber) {
 		chances = 3;
 		this.debitCardNumber= debitCardNumber;
 		this.name = name;
